@@ -8,12 +8,17 @@ import { Task } from '../../models/task';
   styleUrls: ['./task-list.component.css']
 })
 export class TaskListComponent implements OnInit {
-  
+
   tasks: Task[] = TASKS;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  removeTask(task: Task) {
+    console.log("supprimer tâche");
+    const index = this.tasks.indexOf(task);
+    this.tasks.splice(index, 1);
+  }
+ 
 }
