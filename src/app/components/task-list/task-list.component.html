@@ -3,7 +3,7 @@
         <mat-list-item>
             <mat-icon mat-list-icon>task_alt</mat-icon>
             <app-task [task]="task"></app-task>
-            <button mat-icon-button color="warn" aria-label="supprimer la tâche" (click)="removeTask(task)">
+            <button mat-icon-button color="warn" class="delete-icon" aria-label="supprimer la tâche" (click)="removeTask(task)">
                 <mat-icon>delete</mat-icon>
             </button>
 
