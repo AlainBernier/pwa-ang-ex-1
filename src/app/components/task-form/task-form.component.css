@@ -3,14 +3,14 @@ form {
     padding-left: 2rem;
  }
  
- mat-form-field {
+ .mat-form-field {
     width: 100%;
  }
  
  button {
     margin-right: 1rem;
  }
- mat-form-field.full-width {
-    width: 100%;
+ .mat-form-field.full-width {
+    width: 17%;
  }
  
