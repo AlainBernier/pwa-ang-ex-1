@@ -1,0 +1,16 @@
+form {
+    border-style: solid;
+    padding-left: 2rem;
+ }
+ 
+ mat-form-field {
+    width: 100%;
+ }
+ 
+ button {
+    margin-right: 1rem;
+ }
+ mat-form-field.full-width {
+    width: 100%;
+ }
+ 

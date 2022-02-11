@@ -16,12 +16,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TaskComponent } from './components/task/task.component';
 import { TaskListComponent } from './components/task-list/task-list.component';
+import { FormsModule } from '@angular/forms';
+import { TaskFormComponent } from './components/task-form/task-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskComponent,
-    TaskListComponent
+    TaskListComponent,
+    TaskFormComponent
   ],
   imports: [
     BrowserModule,
@@ -37,7 +40,8 @@ import { TaskListComponent } from './components/task-list/task-list.component';
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
-    MatNativeDateModule
+    MatNativeDateModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

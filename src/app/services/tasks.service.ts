@@ -10,7 +10,7 @@ export class TasksService {
   tasks: Task[] = TASKS;
 
   constructor() { }
-  
+
   getTasks() : Task[] {
     return this.tasks;
   }
@@ -20,5 +20,20 @@ export class TasksService {
     this.tasks.splice(index, 1);
  }
 
-
+ createNewTask(text: string, date: Date) {
+   this.addTask({
+     text: text,
+     date: date
+   });
+    }
+addTask(task: Task) : void {
+  this.tasks.push(task);
+    }
 }
+
+   
+ 
+
+
+
+
